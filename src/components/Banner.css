@@ -1,0 +1,42 @@
+.banner {
+  width: 100%;
+  height: 560px;
+  overflow: hidden;
+  position: relative;
+  background: #000;
+}
+
+.banner-img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 560px;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.banner-dots {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: rgba(255,255,255,0.5);
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border: 2px solid #fff;
+}
+
+.dot.active {
+  background-color: #fff;
+}
